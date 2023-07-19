@@ -115,7 +115,7 @@ app.MapGet("/signin-oidc",
         if (!result.IsSuccessStatusCode)
         {
             await context.RespondWithHtml(500,
-                $"You've got a code, bit failed to get token. Reason status code: {context.Response.StatusCode}");
+                $"You've got a code, but failed to get token. Reason status code: {context.Response.StatusCode}");
             return;
         }
 
