@@ -1,5 +1,5 @@
 # Get your hands dirty and implement Authorization Code Workflow easily with asp.net
-This is `Piece Of Cake` level version.
+This is `High Level` version.
 This sample code uses build-in OIDC features of asp.net. It is designed to help to get started quickly if you choose dotnet and asp.net web application development stack.
 If you want explore the details of OAuth2.0 and OIDC protocol as it works behind the scenes, you can check out an `Elbow Grease` version of the sample code.
 
@@ -16,7 +16,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet/7.0
 ## Configuration
 For the example to work, you need to provide your credentials for acessing the API.
 Take a look at the 
-[appsettings.template.json](src/AuthExample.Console/appsettings.template.json)
+[appsettings.template.json](src/AuthCode.Dotnet.HighLevel/appsettings.template.json)
 Please copy the contents of this file to appsettings.json in the same directory (this file does not exist as you've just checked out the sample).
 Edit the [appsettings.json](appsettings.json), filling with the credentials and properties you've received.
 Never commit this file to Git. This file is in the .gitignore. If you choose to place the credentials in a file stored in the same directory in your real application you should also make sure this file is not committed to the repository.
@@ -44,7 +44,7 @@ dotnet dev-certs https --trust
 
 ```shell
 cd src
-cd AuthorizationCodeWorkflow.PieceOfCake
+cd AuthCode.Dotnet.HighLevel
 dotnet run
 ```
 
